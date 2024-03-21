@@ -1,0 +1,3 @@
+Tampering refers to the unauthorized alteration of data or code, which can compromise the integrity and security of software applications. 
+
+The vulnerability in the code, involves HTML injection through input text, allowing attackers to create executable links. When users submit this tampered input, and it is improperly sanitized by the application, these links can be rendered as part of the webpage. Clicking on these links can redirect users to malicious websites. To fix this issue and mitigate the risk of HTML injection, we need to ensure that the input is sanitized first. 

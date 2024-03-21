@@ -1,1 +1,6 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The vulnerability in the code refers to spoofing - Spoofing generally refers to the act of masquerading as a legitimate user.
+In the insecure code we can note that the httpOnly parameter is set to false which allows JavaScript running in the browser to access the session cookie. An attacker in this case could use JavaScript to steal the session cookie. Also, the missing sameSite attribute makes the cookie vulnerable to CSRF attacks. Without sameSite protection, cookies might be sent along with requests initiated by third-party websites. 
+
+The secure code fixes the cookie security flags and ensure that the session secret remains confidential and can be easily managed.
