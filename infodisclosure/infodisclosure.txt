@@ -1,3 +1,8 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+The vulnerability arises as the user input is not properly sanitized, allowing for the execution of malicious scripts (Cross-Site Scripting or XSS). It has been fixed by checking the input is of the expected type i.e String and does not contain any malicious characters or patterns, such as script tags or SQL injection vectors. 
+
 Which CIA property does tampering violate?
+Tampering with data violates the Integrity and Confidentiality aspect of the CIA
+
 What additional security mechanisms can you incorporate?
+We can utilize hashing algorithms to store passwords securely.

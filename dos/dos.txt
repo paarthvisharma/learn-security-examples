@@ -1,2 +1,8 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+The insecure file is missing error handling. A user can pass input which can lead to crashing the server. To mitigate this vulnerability, incorporating try-catch blocks within the application's code is essential. This approach enables the application to elegantly handle errors by catching exceptions that could arise from incorrect inputs, thereby preventing potential crashes.
+
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+Beyond implementing try-catch for error handling, we can add middleware to rate limit requests. This can significantly reduce the risk of denial-of-service (DoS) attacks. 
+
+

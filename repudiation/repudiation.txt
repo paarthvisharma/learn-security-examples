@@ -1,2 +1,5 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+Repudiation refers to the ability of a user to deny the authenticity of their actions within an application, a vulnerability that can be exploited if there's insufficient logging and auditing capabilities. The insecure file lacks the logging capabilities whereas the secure code incorporates comprehensive logging functionalities, making it superior in preventing repudiation attacks compared to insecure version.  
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+Enable audit logs and conduct regular reviews of the audit logs.
